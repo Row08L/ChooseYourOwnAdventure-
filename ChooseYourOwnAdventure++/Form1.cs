@@ -338,7 +338,7 @@ namespace ChooseYourOwnAdventure__
                         timeUsed = timeUsed + 1;
                         outputLabel.Text = "You stay seated blankly staring at a wall. The man stays there looking impatient?";
                         Refresh();
-                        Thread.Sleep(1000);
+                        Thread.Sleep(2000);
                         outputLabel.Text = "The man sighs and leaves angrily rambling about something. What do you do?";
                         choiceButton1.Text = "Attempt another escape";
                         page = 38;
@@ -392,7 +392,7 @@ namespace ChooseYourOwnAdventure__
                 Thread.Sleep(2000);
                 outputLabel.Text = "Your vision goes white and you don't have any senses. As you lose consciousness you feel disappointed";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 outputLabel.Height = 240;
                 outputLabel.Text = "Ending \"There's No Time To Explain\" Achieved. Play again?";
                 choiceButton1.Text = "Yes";
@@ -639,7 +639,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Your vision goes white and you don't have any senses. As you lose consciousness you feel disappointed";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 outputLabel.Height = 240;
                 sound.Play();
                 outputLabel.Text = "Ending \"There's No Time To Explain\" Achieved. Play again?";
@@ -815,7 +815,7 @@ namespace ChooseYourOwnAdventure__
                     outputLabel.ForeColor = Color.White;
                     endingBox.Image = Properties.Resources.nothing;
                     outputLabel.Height = 240;
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "Ending \"Ascension\" achieved. Play again?";
                     choiceButton1.Text = "Yes";
                     choiceButton2.Text = "No";
@@ -850,7 +850,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Your vision goes white and you don't have any senses. As you lose consciousness you feel disappointed";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 outputLabel.Height = 240;
                 sound.Play();
                 outputLabel.Text = "Ending \"There's No Time To Explain\" Achieved. Play again?";
@@ -899,7 +899,7 @@ namespace ChooseYourOwnAdventure__
                 Thread.Sleep(2000);
                 outputLabel.Text = "Your vision goes white and you don't have any senses. As you lose consciousness you feel disappointed";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 outputLabel.Height = 240;
                 outputLabel.Text = "Ending \"There's No Time To Explain\" Achieved. Play again?";
                 choiceButton1.Text = "Yes";
@@ -925,7 +925,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You look around and get an item that feels like a " + newInventoryItem + "?";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 3;
             }
             else if (page == 2002)
@@ -933,7 +933,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You look around and don't find anything.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 3;
             }
             else if (page == 4)
@@ -941,7 +941,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You knock on what feels like a wall. It gives.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 5;
             }
             else if (page == 6)
@@ -949,7 +949,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You look at yourself and see a sharp dressed man.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 10;
             }
             else if (page == 7)
@@ -957,7 +957,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You stand there and look around for people. There is literally nothing, no people, no buildings, just a sea of trash.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 10;
             }
             else if (page == 8)
@@ -965,7 +965,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You attempt to dive to the side, but you just flail on to the ground.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 10;
             }
             if (page == 10)
@@ -973,7 +973,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "The SUV in the distance does a sick drift and turns around towards you.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 11;
             }
             else if (page == 12)
@@ -981,7 +981,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You try to outrun the SUV? Sadly the SUV is faster than you and catches up";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 13;
             }
             else if (page == 16)
@@ -989,7 +989,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You stand there as the van gets closer to you and slides to a stop";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 13;
             }
             if (page == 13)
@@ -997,7 +997,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "A man in black gets out of the SUV and shoots you with a syringe. Everything fades to black";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 1;
                 timeUsed = timeUsed + 3;
                 escapedOnce = true;
@@ -1008,7 +1008,7 @@ namespace ChooseYourOwnAdventure__
                 outputLabel.Text = "There is no response.";
                 timeUsed = timeUsed + 1;
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 23;
             }
             else if (page == 19)
@@ -1016,7 +1016,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Through the wall you hear \"The great sea highway, where else would we be ? \"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 23;
             }
             else if (page == 20)
@@ -1024,7 +1024,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Through the wall you hear \"I would like to know that to.We only do deliveries\"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 23;
             }
             else if (page == 21)
@@ -1032,7 +1032,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Through the wall you hear \"We do deliveries\"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 23;
             }
             else if (page == 22)
@@ -1040,7 +1040,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Through the wall you hear \"These's only one place we would be going\"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 23;
             }
             else if (page == 24)
@@ -1048,7 +1048,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You try to resist for a  what feels like half an hour, draining your energy. You drift off to sleep in dismay";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 26;
             }
             else if (page == 25)
@@ -1056,7 +1056,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You choose to accept it and drift off to sleep";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 26;
             }
             else if (page == 27)
@@ -1064,7 +1064,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You look around and see hard concrete walls and a metal door on the other side of the room";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 28;
             }
             if (page == 28)
@@ -1072,7 +1072,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You are in a metal chair, unrestrained and there is a clean wooden table in front of you.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 29;
             }
             if (page == 29)
@@ -1080,7 +1080,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You don't have time to react but a man in a lab coat enters the room and sits down across from you";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 30;
             }
             else if (page == 31)
@@ -1088,7 +1088,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Really? You don't? It's the entire reason you're here. You've been studying this for most of your life";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 32;
             }
             if (page == 32)
@@ -1096,7 +1096,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "He then mutters \"I guess the implants really got to him *sigh * he is really useless isn't he\"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 33;  
             }
             else if (page == 34)
@@ -1104,7 +1104,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "The man says \"Great, lets go then, time is of the essence\"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 35;
             }
             else if (page == 39)
@@ -1112,7 +1112,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You pull out your firearm and shoot the man and he falls to the ground crying for help";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 40;
             }
             if (page == 40)
@@ -1120,7 +1120,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You hear cold foot steps running down the hall way  and then two heavily armoured men rush into the room and quickly knock you out, your consciousness fades";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 timeUsed = timeUsed + 999;
             }
             else if (page == 41)
@@ -1128,7 +1128,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You follow the man out the door and down a hallway.You walk into a huge room filled with tubes all going towards an odd machine";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 42;
             }
             if (page == 42)
@@ -1136,7 +1136,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "The air is buzzing with electricity and the area around the machine is filled with activity";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 43;
             }
             if (page == 43)
@@ -1144,7 +1144,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "The man leads you to what looks like the front of the machine through the bustling activity of the scientists";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 44;
             }
             if (page == 44)
@@ -1152,7 +1152,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "The man then says to another man \"He's here, start it up, we're running out of time\"";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 45;
             }
             if (page == 45)
@@ -1160,7 +1160,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "A large ring on the machine starts spinning rapidly as other people step away, arcs of blue electricity sparking from the ring";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 46;
             }
             else if (page == 47)
@@ -1168,7 +1168,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You pull a black featureless cube out of your pocket to the dismay of others and offer it with two hands to what's in front of you";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 48;
                 endingBox.Height = (451);
                 endingBox.Width = (818);
@@ -1183,7 +1183,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "T̶̗͝H̷̩̑Ě̸͖ ̶̹́Ĉ̶͙U̷̬͑B̷͔͒Ë̸̡ floats from your hands and into the thing";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 49;
             }
             if (page == 49)
@@ -1191,7 +1191,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "The room you're in seems to corrupt as this happens but no one seems to notice except you";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 50;
             }
             if (page == 50)
@@ -1199,7 +1199,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Your vision turns to black except the electric blue arcs still in front of you";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 51;
             }
             if (page == 51)
@@ -1207,7 +1207,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "W̸̢̧̧̡̢͓̰̬͔̦͖̳̣̖̳͍̥̠̖̘̺̫͉͍̩̪̘͈͔̰̙̪͔̣͖͈̞̙̮͖̲̜̭̹͔̤̼͖͓̼̤͔̝̫͇̦̝̞̺͖͔͔̘͔̤̪͓͔͇͍̿̅̇̋́̈́̑̈́͜͠ͅE̴̡̡̢̡̢̢̧̡̡̨͚̺͈̟̦̗̫̘̝̥͚̟͔̗͈̰̰͎̳̘̩͖͓̣̦͍̳̞͍̩̜̹͎̼̟͇͖̯͇̤̪̙̥̖̺͉̗̩̳̠̞̳̼̹̣̞̩̘̞̩͚̘̬̺̭̳̙͍̥͔̞̜͕͔̜̥̬̿̈̈́͑͋̀͋̀̓͆̒̐͑͋̀̔̓́̍̈́̀̄͜͠͝ͅ ̵̡̡̡̛̛̝̫̱̦̣̱͇̖̝̝̙̦̙͇̫͇͇̫̏́̓͐̍̎͂̆̐̓̄̔̄̽̃̓͆̄̋̉̈̒͒́̽̈́́̿̃̒̈́̓͐͂͋̍̉́̏͂͑̌̈́̈͐͂͛̽̂̀̒̄̅̿͒̈́̏̀̐͘̕͘̕͘͝͝͠͝ͅͅĄ̷̧̢̡̡̡̧̛̗̥͔̺̯̬̰̟̲̙̤̣̘̝͔̣̮̥̱̻̪̯͕̜̻̖̝̙̤͚̘̝͕̪̝̲̳̱̞̬͔̞͕̮̖̤̼͎̗̬͕͖̦̄̒́̽̂̋̋͐̉̂̌̉̓͆̄̎̐̂̈́̓͒̑͊͌͆̀͐̈̿̅̿̎̊̃̅̓̃̏̏̇̎̎̃̆̈́͂̋̓͒̏̋̚̕͘͜͝͠͠Ḉ̷͚͕̮̥̪͎̟͎̺̙̹̝͎͚̤̪̩̰̠̺̟̭̹͓̹͎̘̩͕̐́̍̇̉̎̓̆̽̀̄͒͐̏̓̊̊̇̔̇͗̾̆̓̍͐̈́̐̏̓̕̕͝͝͝ͅĊ̷̢̨̡̼̦̯͓͍̙͇͍̤͔̣̣̤͈̝͈̭͚͈̤̘̠͉̩̞̗̩̰͚̬̭̟̟͇̭͇͉͓̼͚͕̹̝̹̞̟̼̬͉̦͈͓̰̱̖̝̞̪̖̞̫̬̳̤͔͔͒͜ͅͅͅE̶̢̨̛̛͚͉͈̖̠͍͖̲̟̼̲̗̬̯͉͓͎͒̑̊̊̂̈̇̇͊͊̃̾̆̂̅̍̐͋̉̽̏̊̀́̈́̇̑͊̄͐͌̈́͐͌̚̕̚͘͠͝͠͠P̸̧̨̢̛͉̣̺̻̗͇͔̤̥͎̗̝͖̙̘̜̺̺̻̬̥̗̫̮͉͓̤̟͈̤̥͔̲̼̫͔̻͙̟͔͉̘̗̟̥̩̣̳̭̅͒̐̇͊̽̾̊̋͒̆̌͆̽͒́̋̃̌͆͆̏͂̃̓̽̀̔̀̀̑͊͗̂̊͆͛̅̾̈́̍͗̓͐͗̓̏͒̏͆́̂̔̄̂̈́͋͆̌̓̀̀̃͑̀̊̀̃̊̇̀͆̽͋̀͌̓́̈̽̒̚̕̕̕̕͜͠͝͝͝͠͝ͅͅͅŢ̶̡̡̡̢̧̡̨̧̛̛̰̥̙̺͓̤͉͈̹͖̼̫̞̦̦͇̣̫̝͔̯͓͓̝̫̘̤̯̣̱̟̲̠͚̱̖̖͖͙̣̙̜͓̲̩̣͕̟̖̣͙̯̜̳̫̬̭͎̻̯͖͉̞̤̟̮̖̠̾̈́̇͒̐͌̊̒͛͋̓͑͗̌̌̌̽̇̅͗͌͐̑́͂͗͐̾̾̍͌̽͑͗͌̂͒̽͊̽̉̈̈͆̑̔̍̀̑͗̑̉̉̀͋͗̊͋̀̽̿̔̋̐͂̄͌͌̑́̂̀̉̌͑̄̅́̈̅̊͂̉͌̍̉̽̅̕̚̕̕̚͜͜͝͝͝͝ͅͅͅ ̵̢͖̟̻͚̥̗̟̞͕͍̘̥͖̮̯̜̤͕̽͒̌̒̒̒̃̊̈́̔͗͒̑̋̂͊̃̔̐́͋͂̓̈̅̀̈͊̓̑̉͆̏̍̐̒̀̚̚͘͘͝͠͝͠͝͝T̵̢̡̧̛̛̹͓̘͎̼͍̰̘̣̞̘̼͉͈̼͕̲̱̯͙̙̠̙̤͉̰̩̬̫͚̰̘̗̫̥̺̺̣̖̤͈̦̻̩͖͓̳̫̣͗̈̉͒̈͌̽̆̈́͐͐̓͑͋͆̆̓̍̋͊̊̒͋̈́̀̀́̄̿͂̐͋̈́̌̂̊̌͂͒̅̍̎̓͌̂̏͝ͅͅͅḦ̶̡̧̢̧̛̛̜̭̣̰͕̜̳̠̙͎̞̟̬̘̩̭̝̙̮͈̩̪̟͇͎͓̻̟͕̣͍̣̟̙̘̙̘͕̟̘̠͔̗̬̟̹͖͉̲̰͓̤̣̺̭̳͉̻̺͕̠͖̫̙͕͗̐̐̄̀̇̿̑̋̑̅̀̉̈͋̒͛̉͋͆̈͒̏̄͂̈́̏̓̀̿̑̈́̚̚͘͜ͅͅĮ̴̨̧̧̧̡̛̖̰͇̩͚̭̣̪͚̬̫̞̮͇̖̣̫͖̞̪̳̙̣̝̗̗̗̝̟͍͈̣́͐͗̂́̋͊̆́̌̈͛̈̀̾̌̽̏́͆̍͒̅͐̈̌̑͐͋̓͛̄̋̈́̾͘̚̚͠͝͠͠͝ͅͅŚ̷̡̡̡̧̢̢̛̞̰̖̼̼̠̟̭̻̳̼̫̱̭̺͚̭̜̬̪̫̻̞͚̱̲̺̥͚̪̣̦͉̫̼͚̠̯͍͙̱͈̳̳͇̣̗̠̳̺̱͙̮̽͒̀̇͗̚ͅͅ ̶̢̛̜̞͎͍͔̟̦͍̙͆̆̌̑̇̂͌́̒̀̔̎̒͗̈́̿̄̈́͑̏̒̋̑̏̋͒̑̏͑͑́̎͆̀̒̉̔̀́͛̐̍͊́̂̇̓̒͌̈͆̂̏̀̄͐͐̈́̾̈̈́́̂̄̄͗̑̊̎͂̾͋͌̽̒̑̋̀͆͐̿̓̽͂̈̕̚̚͘̕̚͘̚͠͠͠͝͠͝Ȍ̵̧̨̧̢̡̢̥͔͖͇̫͍͈̟̣͇͓̹̗͓̜͍̮̼̙͈͇̜͙̣̬͈͎̗͙͖͓͚̼͎̤̙̻͎͙͉͒̈́̉̅͑̈̐̀̍͂͐͑̌́͐͒̒͒͆͛̎̇͂͂̈̾̓̅̐͐̐̿̓̽͋͂̾͊͗̈͠F̸̧̨̢̡̢̛̹̻̖͙̻͕̠̥̺̰̯̟̰͓͍̪͓̞̥̹̺̦̞͈̟̘͌̐̐̐̎͊͌̎͛̉̽̌̈́̈́̽̈́̋̀̍̿̈́͐͒͗͘͜͝͠F̸̡̡̧̧̧̡̡̧̡̛̛͔͚̜̻̞̥̲̗̯̝͍̣͕͚̩̯̭̩͇̞͍̩̼͚̤̭͖͇̹͖͓̤̖͙̫̼̮̯̰̬̹̰̫̩̱̱͕͎̘͎̘̥̣̩̰̜̫̻̠͇͓͈̼̝̽͋͋͆̏͗̓̄́̇̉́̃̉̄͊͂̍͗̐̔̄̏́͂̌̆̈́͋́̈͊̈͒́̇̈́̑͌̕̕̕͜͜͜͝͝ͅĘ̶̨̨̢̡̢̡̢̡̛̛̼̮̙͉̳͉̮͎̼͉͍͍̞̟̳̟̹͉̬̞̱͎̰͚̙͍̬͓̘̭̮͎̰̺͖̩̝͎̣̪̝̙͙̘̗͙̩̪̭̖̳͖͙̠͕͇̙͉̩̦̩̼͎̩̬̦͎̫̟͕̩͍́̓̀̓͋̈́̀̾̓́̆̅̃̀͗̒̋̄̀͆͒̂̅̉́̈́́̈͛̓̉̏̿͋͊̍̈́͐̌́̃̽̊͗̒͂͆͋̉̈́̈́́͂̽̅͐̍̎͆̒͆̆̅́͐͗͛͘͘̕̕͜͜͝͠͝͝͝͝ͅͅŘ̸̡̧̧̡̛̛̛̛̻̥̻̭̣̖̭͙͍̖̝̟̮̯̱͎͙͕͎͈̣͈͔̰̯͈̼̲̪̠̤̰̹̝̘̼̩͇͕̹̣̳̯̠͉̳̖̯̱̤̺̹̟̼̝̻̲͓̺̝̬̝̮͔̩͉̼͖͍̹̞͇̙̼̬̝̗̰̻͔̰̝̳͎̯̍̉̾̄̊̌͋͒̐̈́̈́̿̑͌̍͂͛̒͒̏̾̈̋̏̇̈́̈̾́͑͋͑̍͑̒̐͆́͑͊̓̿̾́̎̋̅̊̉͗̊́́̀͌̎̾͒̒̽̋̍̔̉̓̕͘͘͝͝͝͠ͅͅͅǏ̶̡̢̡̢̢̨̨̨̡̡̨̢̛̮͙͓̭̩͈̭͖͚̭̳͔̹̰̼͎̗̱̠̯͔̼̖̻̦̹͚̖̼̮̩̝̥̼̮̳̤̺͇͔͖̘̻̱͖̦̖̺͇͚͇̻̠̬̝̝̠̖̯͙̱͙̜̠̩̯͉̳̭͓̩̞͓̯̮̾̓̓̀͊̐͛̒̏̆̋̾̆̓̓̎͋̈́̚̚͜͠N̵̡̨͇̟͍̭̲̘͓̦͎̱̰͕͔̖͕̜̮̰͍̰̤͔͔̞̪̥̞̗͙̤͇͎̖̣͓̙͖̦̪̯̠̣̲̤̼̥͖̰̖̼̣̜̱̟͕̟̹̣̖̗̮̼͉̞̻̥̹͈̺̫͙̱̝̲̠̱͍̒͛̀̊̌͗̀̆̓̾̽̐̀͑̈͑̾̎̆͒̌̈́̄̎̈́̔̔͛́̀̍̂̏͆̄͊̊̏͗̋̊̽̂̓̐̉̈́̏̒͐͆̂̚̕͘͘͜͠͠ͅG̸̢̧̡̢̛̝̼̟̮̥̼̮̳͉̯̼̼͕̦̳̩̣͈̜̘̘̗̤͉͎̟̱͖͔͇̹̙͎͉̟͔͕͍͓͙̞̝̙͍͋͛͊̾͂̀̈́͌͒͆͗́̈́͌̓̎̈́͗̽͂̇͗͌̈́̀͗̍̈́͑̈́̎̔͋͋͐̈́́̌͘̚͜͜͜͜͜͠͝͝ͅ";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 52;
             }
             else if (page == 54)
@@ -1215,7 +1215,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You look at the thing closer and it's colorless, light seems to be absorbed by it. This contrasts with the galexy blue and twinkling stars that are its backdrop";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 55;
             }
             else if (page == 56)
@@ -1223,7 +1223,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You wait for more to happen to get a bigger picture";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 57;
             }
             else if (page == 59)
@@ -1231,7 +1231,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You tiredly go in to grapple with it like a man would";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 60;
             }
             if (page == 60)
@@ -1239,7 +1239,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "When you go to touch it you feel it start to absorb you, shivering as it does so.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 61;
             }
             if (page == 60)
@@ -1247,7 +1247,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "When you go to touch it you feel it start to absorb you, shivering as it does so.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 61;
             }
             if (page == 61)
@@ -1255,7 +1255,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You yell and scream but no one reacts as you body is pulled through.";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 62;
             }
             else if (page == 63)
@@ -1271,7 +1271,7 @@ namespace ChooseYourOwnAdventure__
                 outputLabel.Parent = endingBox;
                 outputLabel.Text = "You yell for some one to deal with the thing as you now remember what I̴̡͓̩͛͘͠T̵̢͚̪͆̀̕ is";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 64;
             }
             if (page == 64)
@@ -1279,7 +1279,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "A team of armoured men rush towards the portal, pushing people out of their way";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 65;
             }
             if (page == 65)
@@ -1287,7 +1287,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "They quickly set up some sort of complex launcher system and them one of the men signals";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 66;
             }
             if (page == 66)
@@ -1295,7 +1295,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "A blinding flash of white and neon purple assails your eyes and you can't hear anything";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 67;
             }
             if (page == 67)
@@ -1303,7 +1303,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "As your vision comes back you don't see the thing in the portal any more. You're instantly relieved and everyone else seems the same way";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 68;
             }
             if (page == 68)
@@ -1311,7 +1311,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You feel like your soul is being sucked out of your body and you can see yourself from a 3rd person view";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 69;
             }
             if (page == 69)
@@ -1319,7 +1319,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "\"Your\" body starts to celebrate with the other people seeming to have a mind of its own";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 70;
             }
             if (page == 70)
@@ -1327,7 +1327,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You feel like your work is done here. Your vision turns to nothing";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 71;
             }
             else if (page == 74)
@@ -1335,7 +1335,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You go to the vent which seems to be dislodged and crawl in";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 75;
             }
             if (page == 75)
@@ -1343,7 +1343,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "As you crawl away you hear someone enter the room behind you and they sound surprised";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 76;
             }
             if (page == 76)
@@ -1351,7 +1351,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You continue to crawl through the vents until you see some sort of light out of another vent";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 77;
             }
             else if (page == 78)
@@ -1359,7 +1359,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You go up to the door and start to bang on it";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 79;
             }
             if (page == 79)
@@ -1367,7 +1367,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "Someone tries to open the door but you're still banging on the door";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 80;
             }
             if (page == 80)
@@ -1375,7 +1375,7 @@ namespace ChooseYourOwnAdventure__
                 sound.Play();
                 outputLabel.Text = "You hear someone call for back up and then you are pushed to the ground by the door as two armoured men rush in";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 page = 81;
             }
         }
