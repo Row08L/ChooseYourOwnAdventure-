@@ -42,8 +42,8 @@ namespace ChooseYourOwnAdventure__
             outputLabel.Text = "You awaken in a dark place and hear an engine start. What do you do?";
             choiceButton1.Text = "Look around for something";
             choiceButton2.Text = "Attempt to escape";
-            timeDeath = randGen.Next(6, 10);
-            page = 71;
+            timeDeath = randGen.Next(6, 10)
+            page = 1;
         }
 
         private void choiceButton1_Click(object sender, EventArgs e)
